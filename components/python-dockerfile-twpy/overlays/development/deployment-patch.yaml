@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: python-dockerfile-twpy
+  namespace: jkopriva-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:6b5c45ed1d5f83185cd18d0676e7ff2a2965c641b0939a36e9c8744eb3533b08
+        name: container-image
+        resources: {}
+status: {}
