@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: python-dockerfile-twpy
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:jkopriva-tenant-python-dockerfile-twpy
+      - image: quay.io/redhat-appstudio/user-workload@sha256:6b5c45ed1d5f83185cd18d0676e7ff2a2965c641b0939a36e9c8744eb3533b08
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
